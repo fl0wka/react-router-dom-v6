@@ -45,7 +45,6 @@ const UserListPage = () => {
 
 const UserPage = () => {
   const { userId } = useParams();
-  console.log('userPage: ', userId);
 
   return (
     <>
@@ -65,7 +64,7 @@ const UserPage = () => {
 
 const EditUserPage = () => {
   const { userId } = useParams();
-  console.log('edit: ', userId);
+
   const nextUser = (Number(userId) + 1).toString();
   return (
     <>
